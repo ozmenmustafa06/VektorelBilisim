@@ -1,0 +1,12 @@
+meyveler=["Elma","Armut","Armut","Kiraz"]
+sebzeler=["Kereviz","Lahana","Pırasa"]
+alinacaklar=meyveler+sebzeler
+print(alinacaklar)
+print("--------------------")
+alinacaklar.sort()
+print(alinacaklar)
+print("--------------------")
+alinacaklar.reverse()
+print(alinacaklar)
+print("--------------------")
+print(alinacaklar.count("Armut"))
