@@ -7,4 +7,4 @@ def topla(*sayi):
     #print(sayi[0])
     #print(sayi[1])
 
-print("Toplam:", topla(10,20,14))
+print("Toplam:",topla(10,20,14))
