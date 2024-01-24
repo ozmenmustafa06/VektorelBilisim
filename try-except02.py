@@ -8,6 +8,6 @@ while hata == "var":
         sayi2 = int(input("Bir sayı giriniz:"))
         print("Toplamı:", sayi1 + sayi2)
         hata = "yok"
-    except:
+    except ValueError:
         print("Hatalı giriş! Lütfen sayıları doğru formatta girin.")
         hata = "var"
