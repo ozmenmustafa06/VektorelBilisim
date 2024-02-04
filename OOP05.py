@@ -14,3 +14,5 @@ calisan2=calisan("Ahmet","Mehmet",25)
 print(calisan2.name,calisan2.surname,calisan2.age)
 
 calisan1.show_info()
+
+calisan.show_info(calisan2)
