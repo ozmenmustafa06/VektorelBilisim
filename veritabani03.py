@@ -11,7 +11,8 @@ try:
     secilenvt=xxx.cursor() #veritabanı seçim işlemi USE .....
     secilenvt.execute("SHOW DATABASES")
     print("Veri Tabanları:")
-    for x in secilenvt:print(x)
+    for x in secilenvt:
+        print(x)
 
 except mysql.connector.Error as xx:
     print("Veri tabanına bağlanırken bir hata oluştu.")
