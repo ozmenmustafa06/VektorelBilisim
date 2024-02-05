@@ -5,7 +5,7 @@ try:
         user="root",
         password="1234"
         )
-    print("Bağlandı")
+    print("Veri tabanına başarıyla bağlandı.")
     print(xxx)
 
     secilenvt=xxx.cursor() #veritabanı seçim işlemi USE .....
@@ -14,5 +14,5 @@ try:
     for x in secilenvt:print(x)
 
 except mysql.connector.Error as xx:
-    print("Bir hata oluştu")
+    print("Veri tabanına bağlanırken bir hata oluştu.")
     print(f"Hata kodu: {xx}")
