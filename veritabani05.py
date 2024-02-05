@@ -3,7 +3,7 @@ try:
     xxx = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="1234"
+        password="1234",
         database="pythondersleri"
         )
     print("Veritabanına başarıyla bağlandı.")
