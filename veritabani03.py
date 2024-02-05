@@ -5,15 +5,16 @@ try:
         user="root",
         password="1234"
         )
-    print("Veri tabanına başarıyla bağlandı.")
+    print("Veritabanına başarıyla bağlandı.")
     print(xxx)
 
-    secilenvt=xxx.cursor() #veritabanı seçim işlemi USE .....
-    secilenvt.execute("SHOW DATABASES")
-    print("Veri Tabanları:")
-    for x in secilenvt:
-        print(x)
+    try:
+        secilenvt=xxx.cursor() #veritabanı seçim işlemi USE .....
+        secilenvt.execute("CREATE DATABASE pythondersleri") # veritabanında SQL komutu çalıştırma işlemi
+        print("Veri tabanı oluşturuldu.")
+    except mysql.connector.Error as hata:
+        print(f"Veritabanı oluşturulamadı. Hata:{hata}")
 
 except mysql.connector.Error as xx:
-    print("Veri tabanına bağlanırken bir hata oluştu.")
+    print("Veritabanına bağlanırken bir hata oluştu.")
     print(f"Hata kodu: {xx}")
