@@ -11,7 +11,7 @@ try:
     try:
         secilenvt=xxx.cursor() #veritabanı seçim işlemi USE .....
         secilenvt.execute("CREATE DATABASE pythondersleri") # veritabanında SQL komutu çalıştırma işlemi
-        print("Veri tabanı oluşturuldu.")
+        print("Veritabanı oluşturuldu.")
     except mysql.connector.Error as hata:
         print(f"Veritabanı oluşturulamadı. Hata:{hata}")
 
